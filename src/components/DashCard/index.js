@@ -8,7 +8,7 @@ import api from '../../services/api'
 
 function DashCard() {
 
-  const [list, setList] = useState([])
+  const [list, setList] = useState([0])
 
   useEffect(() => {
 
@@ -22,16 +22,16 @@ function DashCard() {
         return gastos.desire === false
 
       })
-      //
+
 
       const myValues = desires.map(valor => valor.value)
-      const reducer = (accumulator, currentValue) => accumulator + currentValue;
-      const total = (myValues.reduce(reducer))
+
+      const reducer = ((accumulator, currentValue) => accumulator + currentValue);
+      const total = (myValues.reduce(reducer, 0))
+
       setList(total)
 
     }
-
-
 
     loadSpentsTotal()
   }, [list])
