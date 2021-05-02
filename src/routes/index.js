@@ -9,6 +9,7 @@ import ListarDesejos from '../views/ListarDesejos'
 import Login from '../views/Login'
 import Cadastro from '../views/Cadastro'
 import RecuperarLogin from '../views/RecuperarLogin'
+import Carteira from '../views/Carteira'
 
 
 const PrivateRoute = props => {
@@ -22,6 +23,7 @@ const Routes = () => (
       <Route path='/' exact component={Login} />
       <Route path='/forgot' exact component={RecuperarLogin} />
       <Route path='/create' exact component={Cadastro} />
+      <PrivateRoute path='/wallet' exact component={Carteira} />
       <PrivateRoute path='/home' exact component={Home} />
       <PrivateRoute path='/listar' exact component={ListarTodos} />
       <PrivateRoute path='/add' exact component={CadastrarGasto} />

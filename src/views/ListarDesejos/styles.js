@@ -18,5 +18,9 @@ export const Content = styled.div`
 `
 
 export const Title = styled.div`
-
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 `

@@ -4,6 +4,8 @@ import Footer from '../../components/Footer'
 import api from '../../services/api'
 import * as S from './styles'
 
+import back1 from '../../assets/back1.jpg'
+
 import { history } from '../../history'
 
 function Login() {
@@ -57,12 +59,11 @@ function Login() {
         <S.Save>
           <button type="button" onClick={Logon}>Logar</button>
 
-          <a href="/create">Criar Cadastro  </a>
-          <a href="/forgot">  Esqueceu a senha? Clique aqui!</a>
-
         </S.Save>
-
+        <a href="/forgot">Esqueceu a senha? Clique aqui!</a>
+        <a href="/create">Não tem cadastro? Crie agora mesmo!</a>
       </S.Form>
+
 
       <Footer />
     </S.Container>

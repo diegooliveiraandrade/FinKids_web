@@ -8,7 +8,8 @@ import api from '../../services/api'
 
 function DashCard() {
 
-  const [list, setList] = useState([0])
+  const [total, setTotal] = useState([0])
+  const [wallet, setWallet] = useState([])
 
   useEffect(() => {
 
@@ -16,39 +17,36 @@ function DashCard() {
 
       const response = await api.get(`/show/${localStorage.getItem('id')}`)
 
-      const data = response.data.spent
+      const wallet = response.data.wallet
 
+      const data = response.data.spent
       const desires = data.filter((gastos) => {
         return gastos.desire === false
 
       })
 
-
       const myValues = desires.map(valor => valor.value)
 
       const reducer = ((accumulator, currentValue) => accumulator + currentValue);
       const total = (myValues.reduce(reducer, 0))
-
-      setList(total)
+      setWallet(wallet - total)
+      setTotal(total)
 
     }
-
     loadSpentsTotal()
-  }, [list])
+  }, [total], [wallet])
+
 
   return (
 
     <S.Container>
       <S.TopCard>
-        <h2>Total de gastos</h2>
-        <span>R$ {list} </span>
+        <h2>Total Gasto: R$ {total} </h2>
 
 
       </S.TopCard>
       <S.BottomCard>
-        <strong></strong>
-
-
+        <h2>Carteira: R$ {wallet}</h2>
       </S.BottomCard>
     </S.Container>
 

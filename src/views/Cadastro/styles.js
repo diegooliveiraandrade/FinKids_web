@@ -10,7 +10,8 @@ export const Form = styled.div`
 
   width: 50%;
   height: 500px;
-  padding-top: 100px;
+  padding-top: 150px;
+  margin-left: 380px;
   margin-bottom: 70px; 
 `
 export const Input = styled.div`
@@ -26,34 +27,9 @@ export const Input = styled.div`
     border-bottom: 1px solid #EE6B26; 
   }
 `
-export const TextArea = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
 
-  textarea{
-    font-size: 16px;
-    border: 1px solid #EE6B26;
-    border-radius: 10px;
-  }
-     
-`
-
-export const Options = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  div{
-    display: flex;
-    align-items: center;
-    color: #EE6B26;
-    font-weight: bold;
-    font-size: 18px;
-  }
-`
 export const Save = styled.div`
-  width: 100%;
+  width: 40%;
   margin-top: 30px;
 
   button{

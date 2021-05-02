@@ -5,40 +5,19 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  a{
-  width: 80%;
-  border: none;
-  font-size: 20px;
-  }
 `
 export const Form = styled.div`
-  width: 40%;
-  height: 800px;
-  padding-top: 160px;
-  margin-bottom: 100px;
-  margin-left:260px; 
 
-
-  a{
   width: 50%;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  justify-content: center;
-  
-  }
+  height: 500px;
+  padding-top: 200px;
+  margin-left: 380px;
 `
 export const Input = styled.div`
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  justify-content: center;
 
   input{
     font-size: 16px; 
@@ -50,11 +29,10 @@ export const Input = styled.div`
 
 export const Save = styled.div`
   width: 100%;
-  margin-top: 30px;
-  display: flex;
+  margin-top: 60px;
 
   button{
-  width: 50%;
+  width: 40%;
   background-color: #EE6B26;
   border: none;
   font-size: 20px;
@@ -69,10 +47,4 @@ export const Save = styled.div`
   }
 
   } 
-
-  a{
-  width: 50%;
-  border: none;
-  font-size: 20px;
-  }
 `

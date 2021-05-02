@@ -37,7 +37,7 @@ function ListarTodos() {
       <Header />
 
       <S.Title>
-        <h1>LISTA</h1>
+        <h1>LISTA DE DESEJOS</h1>
       </S.Title>
 
       <S.Content>

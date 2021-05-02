@@ -20,6 +20,14 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
+
+  span{
+    height: 20px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+  }
   
   img{
     width: 250px;
@@ -52,5 +60,7 @@ export const RightSide = styled.div`
     content: "|";
     margin: 0 10px;
   }
+
+  
   
 `

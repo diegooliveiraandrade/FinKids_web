@@ -7,16 +7,12 @@ import * as S from './styles'
 
 function Home() {
 
-
-
-
-
   return (
 
     <S.Container>
       <Header />
       <S.Title>
-        <h1>LISTA</h1>
+
       </S.Title>
       <DashCard />
 
